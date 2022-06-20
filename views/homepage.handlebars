@@ -1,0 +1,11 @@
+<h1>Lista de cadastros: </h1>
+
+{{#each posts}}  <!--each == para cada postagem faça algo-->
+    <small>{{dataValues.createdAt}}</small>
+    <h1>{{dataValues.escrever}}</h1>
+    <p>{{dataValues.conetudo}}</p>
+    <a href="/lixeira/{{dataValues.id}}"><button>Excluir</button></a> <!--Botão deletar-->
+    <hr>
+{{/each}}
+
+ <!--pra exibir no front-->
